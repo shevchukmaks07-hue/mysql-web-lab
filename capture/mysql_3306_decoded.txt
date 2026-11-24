@@ -1,0 +1,48 @@
+4 3306 55784 Server\ Greeting\ \ proto=10\ version=8.0.46\ 
+6 55784 3306 Login\ Request\ user=webuser\ db=webdb\ 
+8 3306 55784 Auth\ Switch\ Request\ 
+9 55784 3306 Auth\ Switch\ Response\ 
+10 3306 55784 Response\ \ OK\ 
+11 55784 3306 Request\ Query
+12 3306 55784 Response\ TABULAR\ Response\ 
+13 55784 3306 Request\ Quit
+25 3306 57148 Server\ Greeting\ \ proto=10\ version=8.0.46\ 
+27 57148 3306 Login\ Request\ user=webuser\ db=webdb\ 
+29 3306 57148 Auth\ Switch\ Request\ 
+30 57148 3306 Auth\ Switch\ Response\ 
+31 3306 57148 Response\ \ OK\ 
+32 57148 3306 Request\ Query
+33 3306 57148 Response\ TABULAR\ Response\ 
+54 57148 3306 Request\ Quit
+89 3306 46582 Server\ Greeting\ \ proto=10\ version=8.0.46\ 
+91 46582 3306 Login\ Request\ user=webuser\ db=webdb\ 
+93 3306 46582 Auth\ Switch\ Request\ 
+94 46582 3306 Auth\ Switch\ Response\ 
+95 3306 46582 Response\ \ OK\ 
+96 46582 3306 Request\ Query
+97 3306 46582 Response\ \ OK\ 
+98 46582 3306 Request\ Quit
+135 3306 46598 Server\ Greeting\ \ proto=10\ version=8.0.46\ 
+137 46598 3306 Login\ Request\ user=webuser\ db=webdb\ 
+139 3306 46598 Auth\ Switch\ Request\ 
+140 46598 3306 Auth\ Switch\ Response\ 
+141 3306 46598 Response\ \ OK\ 
+142 46598 3306 Request\ Query
+143 3306 46598 Response\ TABULAR\ Response\ 
+177 46598 3306 Request\ Quit
+193 3306 46604 Server\ Greeting\ \ proto=10\ version=8.0.46\ 
+195 46604 3306 Login\ Request\ user=webuser\ db=webdb\ 
+197 3306 46604 Auth\ Switch\ Request\ 
+198 46604 3306 Auth\ Switch\ Response\ 
+199 3306 46604 Response\ \ OK\ 
+200 46604 3306 Request\ Query
+201 3306 46604 Response\ \ OK\ 
+202 46604 3306 Request\ Quit
+219 3306 46610 Server\ Greeting\ \ proto=10\ version=8.0.46\ 
+221 46610 3306 Login\ Request\ user=webuser\ db=webdb\ 
+223 3306 46610 Auth\ Switch\ Request\ 
+224 46610 3306 Auth\ Switch\ Response\ 
+225 3306 46610 Response\ \ OK\ 
+226 46610 3306 Request\ Query
+227 3306 46610 Response\ TABULAR\ Response\ 
+261 46610 3306 Request\ Quit

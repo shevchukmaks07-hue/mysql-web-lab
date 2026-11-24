@@ -1,0 +1,2034 @@
+Frame 4: 144 bytes on wire (1152 bits), 144 bytes captured (1152 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 55784, Seq: 1, Ack: 1, Len: 78
+MySQL Protocol
+    Packet Length: 74
+    Packet Number: 0
+    Server Greeting
+        Protocol: 10
+        Version: 8.0.46
+        Thread ID: 11
+        Salt: 7!\rCG2O\x1A
+        Server Capabilities: 0xf7ff
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..1. = Found Rows: Set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...1 .... = Don't Allow database.table.column: Set
+            .... .... ..1. .... = Can use compression protocol: Set
+            .... .... .1.. .... = ODBC Client: Set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...1 .... .... = Ignore Spaces before '(': Set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .1.. .... .... = Interactive Client: Set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...1 .... .... .... = Ignore sigpipes: Set
+            ..1. .... .... .... = Knows about transactions: Set
+            .1.. .... .... .... = Speaks 4.1 protocol (old flag): Set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Server Language: utf8mb4 COLLATE utf8mb4_0900_ai_ci (255)
+        Server Status: 0x0002
+            .... .... .... ...0 = In transaction: Not set
+            .... .... .... ..1. = AUTO_COMMIT: Set
+            .... .... .... .0.. = Multi query / Unused: Not set
+            .... .... .... 0... = More results: Not set
+            .... .... ...0 .... = Bad index used: Not set
+            .... .... ..0. .... = No index used: Not set
+            .... .... .0.. .... = Cursor exists: Not set
+            .... .... 0... .... = Last row sent: Not set
+            .... ...0 .... .... = Database dropped: Not set
+            .... ..0. .... .... = No backslash escapes: Not set
+            .... .0.. .... .... = Metadata changed: Not set
+            .... 0... .... .... = Query was slow: Not set
+            ...0 .... .... .... = PS Out Params: Not set
+            ..0. .... .... .... = In Trans Readonly: Not set
+            .0.. .... .... .... = Session state changed: Not set
+        Extended Server Capabilities: 0x9fff
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .1.. = PS Multiple results: Set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..1. .... = Plugin Auth LENENC Client Data: Set
+            .... .... .1.. .... = Client can handle expired passwords: Set
+            .... .... 1... .... = Session variable tracking: Set
+            .... ...1 .... .... = Deprecate EOF: Set
+            .... ..1. .... .... = Client can handle optional resultset metadata: Set
+            .... .1.. .... .... = ZSTD Compression Algorithm: Set
+            .... 1... .... .... = Query Attributes: Set
+            ...1 .... .... .... = Multifactor Authentication: Set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            1... .... .... .... = Unused: 0x1
+        Authentication Plugin Length: 21
+        Unused: 00000000000000000000
+        Salt: B.\x0FLVP,7=C\\t
+        Authentication Plugin: caching_sha2_password
+
+Frame 6: 298 bytes on wire (2384 bits), 298 bytes captured (2384 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 55784, Dst Port: 3306, Seq: 1, Ack: 79, Len: 232
+MySQL Protocol
+    Packet Length: 228
+    Packet Number: 1
+    Login Request
+        Client Capabilities: 0xa28d
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..0. = Found Rows: Not set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...0 .... = Don't Allow database.table.column: Not set
+            .... .... ..0. .... = Can use compression protocol: Not set
+            .... .... .0.. .... = ODBC Client: Not set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...0 .... .... = Ignore Spaces before '(': Not set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .0.. .... .... = Interactive Client: Not set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...0 .... .... .... = Ignore sigpipes: Not set
+            ..1. .... .... .... = Knows about transactions: Set
+            .0.. .... .... .... = Speaks 4.1 protocol (old flag): Not set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Extended Client Capabilities: 0x00bf
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .1.. = PS Multiple results: Set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..1. .... = Plugin Auth LENENC Client Data: Set
+            .... .... .0.. .... = Client can handle expired passwords: Not set
+            .... .... 1... .... = Session variable tracking: Set
+            .... ...0 .... .... = Deprecate EOF: Not set
+            .... ..0. .... .... = Client can handle optional resultset metadata: Not set
+            .... .0.. .... .... = ZSTD Compression Algorithm: Not set
+            .... 0... .... .... = Query Attributes: Not set
+            ...0 .... .... .... = Multifactor Authentication: Not set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            0... .... .... .... = Unused: 0x0
+        MAX Packet: 1048576
+        Collation: utf8mb4 COLLATE utf8mb4_general_ci (45)
+        Unused: 0000000000000000000000000000000000000000000000
+        Username: webuser
+        Password: 6c1616b1ddd768b84a3b014a76d716446a33fa2bc42dd53a83294eb652df8abc
+        Schema: webdb
+        Client Auth Plugin: caching_sha2_password
+        Connection Attributes
+            Connection Attributes length: 126
+            Connection Attribute - _os: Linux
+                Connection Attribute Name Length: 3
+                Connection Attribute Name: _os
+                Connection Attribute Value Length: 5
+                Connection Attribute Value: Linux
+            Connection Attribute - _client_name: libmariadb
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _client_name
+                Connection Attribute Value Length: 10
+                Connection Attribute Value: libmariadb
+            Connection Attribute - _pid: 1684
+                Connection Attribute Name Length: 4
+                Connection Attribute Name: _pid
+                Connection Attribute Value Length: 4
+                Connection Attribute Value: 1684
+            Connection Attribute - _client_version: 3.4.10
+                Connection Attribute Name Length: 15
+                Connection Attribute Name: _client_version
+                Connection Attribute Value Length: 6
+                Connection Attribute Value: 3.4.10
+            Connection Attribute - _platform: x86_64
+                Connection Attribute Name Length: 9
+                Connection Attribute Name: _platform
+                Connection Attribute Value Length: 6
+                Connection Attribute Value: x86_64
+            Connection Attribute - program_name: mysql
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: program_name
+                Connection Attribute Value Length: 5
+                Connection Attribute Value: mysql
+            Connection Attribute - _server_host: 127.0.0.1
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _server_host
+                Connection Attribute Value Length: 9
+                Connection Attribute Value: 127.0.0.1
+
+Frame 8: 114 bytes on wire (912 bits), 114 bytes captured (912 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 55784, Seq: 79, Ack: 233, Len: 48
+MySQL Protocol - authentication switch request
+    Packet Length: 44
+    Packet Number: 2
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Auth Method Name: mysql_native_password
+    Auth Method Data: 37210d4347324f1a422e0f4c56502c373d435c0900
+
+Frame 9: 90 bytes on wire (720 bits), 90 bytes captured (720 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 55784, Dst Port: 3306, Seq: 233, Ack: 127, Len: 24
+MySQL Protocol
+    Packet Length: 20
+    Packet Number: 3
+    Auth Method Data: 9cb18b9aff0e183a670e38b0b050b1a0d50a34a8
+
+Frame 10: 87 bytes on wire (696 bits), 87 bytes captured (696 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 55784, Seq: 127, Ack: 257, Len: 21
+MySQL Protocol - response OK
+    Packet Length: 17
+    Packet Number: 4
+    Response Code: OK Packet (0x00)
+    Affected Rows: 0
+    Server Status: 0x4002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .1.. .... .... .... = Session state changed: Set
+    Warnings: 0
+    Session tracking data
+        Session tracking data length: 8
+        Session Track
+            Session tracking type: CURRENT_SCHEMA_TRACKER (1)
+            Session tracking length: 6
+            Schema change length: 5
+            Schema change: webdb
+
+Frame 11: 87 bytes on wire (696 bits), 87 bytes captured (696 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 55784, Dst Port: 3306, Seq: 257, Ack: 148, Len: 21
+MySQL Protocol
+    Packet Length: 17
+    Packet Number: 0
+    Request Command Query
+        Command: Query (3)
+        Statement: SELECT VERSION()
+
+Frame 12: 135 bytes on wire (1080 bits), 135 bytes captured (1080 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 55784, Seq: 148, Ack: 278, Len: 69
+MySQL Protocol - column count
+    Packet Length: 1
+    Packet Number: 1
+    Number of fields: 1
+MySQL Protocol - field packet
+    Packet Length: 31
+    Packet Number: 2
+    Catalog
+        Catalog: def
+    Database
+        Database: 
+    Table
+        Table: 
+    Original table
+        Original table: 
+    Name
+        Name: VERSION()
+    Original name
+        Original name: 
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 24
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x0001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 31
+MySQL Protocol - intermediate EOF
+    Packet Length: 5
+    Packet Number: 3
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Warnings: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+MySQL Protocol - row packet
+    Packet Length: 7
+    Packet Number: 4
+    text
+        text: 8.0.46
+MySQL Protocol - response EOF
+    Packet Length: 5
+    Packet Number: 5
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Warnings: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+
+Frame 13: 71 bytes on wire (568 bits), 71 bytes captured (568 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 55784, Dst Port: 3306, Seq: 278, Ack: 217, Len: 5
+MySQL Protocol
+    Packet Length: 1
+    Packet Number: 0
+    Request Command Quit
+        Command: Quit (1)
+
+Frame 25: 144 bytes on wire (1152 bits), 144 bytes captured (1152 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 57148, Seq: 1, Ack: 1, Len: 78
+MySQL Protocol
+    Packet Length: 74
+    Packet Number: 0
+    Server Greeting
+        Protocol: 10
+        Version: 8.0.46
+        Thread ID: 12
+        Salt: \rDk\x04=x\v
+        Server Capabilities: 0xf7ff
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..1. = Found Rows: Set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...1 .... = Don't Allow database.table.column: Set
+            .... .... ..1. .... = Can use compression protocol: Set
+            .... .... .1.. .... = ODBC Client: Set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...1 .... .... = Ignore Spaces before '(': Set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .1.. .... .... = Interactive Client: Set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...1 .... .... .... = Ignore sigpipes: Set
+            ..1. .... .... .... = Knows about transactions: Set
+            .1.. .... .... .... = Speaks 4.1 protocol (old flag): Set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Server Language: utf8mb4 COLLATE utf8mb4_0900_ai_ci (255)
+        Server Status: 0x0002
+            .... .... .... ...0 = In transaction: Not set
+            .... .... .... ..1. = AUTO_COMMIT: Set
+            .... .... .... .0.. = Multi query / Unused: Not set
+            .... .... .... 0... = More results: Not set
+            .... .... ...0 .... = Bad index used: Not set
+            .... .... ..0. .... = No index used: Not set
+            .... .... .0.. .... = Cursor exists: Not set
+            .... .... 0... .... = Last row sent: Not set
+            .... ...0 .... .... = Database dropped: Not set
+            .... ..0. .... .... = No backslash escapes: Not set
+            .... .0.. .... .... = Metadata changed: Not set
+            .... 0... .... .... = Query was slow: Not set
+            ...0 .... .... .... = PS Out Params: Not set
+            ..0. .... .... .... = In Trans Readonly: Not set
+            .0.. .... .... .... = Session state changed: Not set
+        Extended Server Capabilities: 0x9fff
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .1.. = PS Multiple results: Set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..1. .... = Plugin Auth LENENC Client Data: Set
+            .... .... .1.. .... = Client can handle expired passwords: Set
+            .... .... 1... .... = Session variable tracking: Set
+            .... ...1 .... .... = Deprecate EOF: Set
+            .... ..1. .... .... = Client can handle optional resultset metadata: Set
+            .... .1.. .... .... = ZSTD Compression Algorithm: Set
+            .... 1... .... .... = Query Attributes: Set
+            ...1 .... .... .... = Multifactor Authentication: Set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            1... .... .... .... = Unused: 0x1
+        Authentication Plugin Length: 21
+        Unused: 00000000000000000000
+        Salt: 1k\x0F!\x0EH=\a\x05b%q
+        Authentication Plugin: caching_sha2_password
+
+Frame 27: 216 bytes on wire (1728 bits), 216 bytes captured (1728 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 57148, Dst Port: 3306, Seq: 1, Ack: 79, Len: 150
+MySQL Protocol
+    Packet Length: 146
+    Packet Number: 1
+    Login Request
+        Client Capabilities: 0xa28d
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..0. = Found Rows: Not set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...0 .... = Don't Allow database.table.column: Not set
+            .... .... ..0. .... = Can use compression protocol: Not set
+            .... .... .0.. .... = ODBC Client: Not set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...0 .... .... = Ignore Spaces before '(': Not set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .0.. .... .... = Interactive Client: Not set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...0 .... .... .... = Ignore sigpipes: Not set
+            ..1. .... .... .... = Knows about transactions: Set
+            .0.. .... .... .... = Speaks 4.1 protocol (old flag): Not set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Extended Client Capabilities: 0x001b
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .0.. = PS Multiple results: Not set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..0. .... = Plugin Auth LENENC Client Data: Not set
+            .... .... .0.. .... = Client can handle expired passwords: Not set
+            .... .... 0... .... = Session variable tracking: Not set
+            .... ...0 .... .... = Deprecate EOF: Not set
+            .... ..0. .... .... = Client can handle optional resultset metadata: Not set
+            .... .0.. .... .... = ZSTD Compression Algorithm: Not set
+            .... 0... .... .... = Query Attributes: Not set
+            ...0 .... .... .... = Multifactor Authentication: Not set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            0... .... .... .... = Unused: 0x0
+        MAX Packet: 3221225472
+        Collation: utf8mb4 COLLATE utf8mb4_general_ci (45)
+        Unused: 0000000000000000000000000000000000000000000000
+        Username: webuser
+        Password: 89683457ce5faa84cb44787fad3bdeda4bb24339a3b9c17bac34403219926e0d
+        Schema: webdb
+        Client Auth Plugin: caching_sha2_password
+        Connection Attributes
+            Connection Attributes length: 44
+            Connection Attribute - _client_name: mysqlnd
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _client_name
+                Connection Attribute Value Length: 7
+                Connection Attribute Value: mysqlnd
+            Connection Attribute - _server_host: 127.0.0.1
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _server_host
+                Connection Attribute Value Length: 9
+                Connection Attribute Value: 127.0.0.1
+
+Frame 29: 114 bytes on wire (912 bits), 114 bytes captured (912 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 57148, Seq: 79, Ack: 151, Len: 48
+MySQL Protocol - authentication switch request
+    Packet Length: 44
+    Packet Number: 2
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Auth Method Name: mysql_native_password
+    Auth Method Data: 5c72446b043d780b316b0f210e483d070562257100
+
+Frame 30: 90 bytes on wire (720 bits), 90 bytes captured (720 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 57148, Dst Port: 3306, Seq: 151, Ack: 127, Len: 24
+MySQL Protocol
+    Packet Length: 20
+    Packet Number: 3
+    Auth Method Data: 6acc5fd3a4d6c0c2387b4aedaee69958c19a3709
+
+Frame 31: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 57148, Seq: 127, Ack: 175, Len: 11
+MySQL Protocol - response OK
+    Packet Length: 7
+    Packet Number: 4
+    Response Code: OK Packet (0x00)
+    Affected Rows: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+    Warnings: 0
+
+Frame 32: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 57148, Dst Port: 3306, Seq: 175, Ack: 138, Len: 82
+MySQL Protocol
+    Packet Length: 78
+    Packet Number: 0
+    Request Command Query
+        Command: Query (3)
+        Statement: SELECT id, full_name, group_name, email, created_at FROM students ORDER BY id
+
+Frame 33: 396 bytes on wire (3168 bits), 396 bytes captured (3168 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 57148, Seq: 138, Ack: 257, Len: 330
+MySQL Protocol - column count
+    Packet Length: 1
+    Packet Number: 1
+    Number of fields: 5
+MySQL Protocol - field packet
+    Packet Length: 47
+    Packet Number: 2
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: id
+    Original name
+        Original name: id
+    Charset number: binary COLLATE binary (63)
+    Length: 10
+    Type: FIELD_TYPE_LONG (3)
+    Flags: 0x4223
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..1. = Primary key: Set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..1. .... = Unsigned: Set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..1. .... .... = Auto increment: Set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 61
+    Packet Number: 3
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: full_name
+    Original name
+        Original name: full_name
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 400
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x1001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 63
+    Packet Number: 4
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: group_name
+    Original name
+        Original name: group_name
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 80
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x1001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 53
+    Packet Number: 5
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: email
+    Original name
+        Original name: email
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 400
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x1001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 63
+    Packet Number: 6
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: created_at
+    Original name
+        Original name: created_at
+    Charset number: binary COLLATE binary (63)
+    Length: 19
+    Type: FIELD_TYPE_TIMESTAMP (7)
+    Flags: 0x0481
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .1.. .... .... = Timestamp: Set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - intermediate EOF
+    Packet Length: 5
+    Packet Number: 7
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Warnings: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+MySQL Protocol - response EOF
+    Packet Length: 5
+    Packet Number: 8
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Warnings: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+
+Frame 54: 71 bytes on wire (568 bits), 71 bytes captured (568 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 57148, Dst Port: 3306, Seq: 257, Ack: 468, Len: 5
+MySQL Protocol
+    Packet Length: 1
+    Packet Number: 0
+    Request Command Quit
+        Command: Quit (1)
+
+Frame 89: 144 bytes on wire (1152 bits), 144 bytes captured (1152 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46582, Seq: 1, Ack: 1, Len: 78
+MySQL Protocol
+    Packet Length: 74
+    Packet Number: 0
+    Server Greeting
+        Protocol: 10
+        Version: 8.0.46
+        Thread ID: 13
+        Salt: '\x15VG#7\x03#
+        Server Capabilities: 0xf7ff
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..1. = Found Rows: Set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...1 .... = Don't Allow database.table.column: Set
+            .... .... ..1. .... = Can use compression protocol: Set
+            .... .... .1.. .... = ODBC Client: Set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...1 .... .... = Ignore Spaces before '(': Set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .1.. .... .... = Interactive Client: Set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...1 .... .... .... = Ignore sigpipes: Set
+            ..1. .... .... .... = Knows about transactions: Set
+            .1.. .... .... .... = Speaks 4.1 protocol (old flag): Set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Server Language: utf8mb4 COLLATE utf8mb4_0900_ai_ci (255)
+        Server Status: 0x0002
+            .... .... .... ...0 = In transaction: Not set
+            .... .... .... ..1. = AUTO_COMMIT: Set
+            .... .... .... .0.. = Multi query / Unused: Not set
+            .... .... .... 0... = More results: Not set
+            .... .... ...0 .... = Bad index used: Not set
+            .... .... ..0. .... = No index used: Not set
+            .... .... .0.. .... = Cursor exists: Not set
+            .... .... 0... .... = Last row sent: Not set
+            .... ...0 .... .... = Database dropped: Not set
+            .... ..0. .... .... = No backslash escapes: Not set
+            .... .0.. .... .... = Metadata changed: Not set
+            .... 0... .... .... = Query was slow: Not set
+            ...0 .... .... .... = PS Out Params: Not set
+            ..0. .... .... .... = In Trans Readonly: Not set
+            .0.. .... .... .... = Session state changed: Not set
+        Extended Server Capabilities: 0x9fff
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .1.. = PS Multiple results: Set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..1. .... = Plugin Auth LENENC Client Data: Set
+            .... .... .1.. .... = Client can handle expired passwords: Set
+            .... .... 1... .... = Session variable tracking: Set
+            .... ...1 .... .... = Deprecate EOF: Set
+            .... ..1. .... .... = Client can handle optional resultset metadata: Set
+            .... .1.. .... .... = ZSTD Compression Algorithm: Set
+            .... 1... .... .... = Query Attributes: Set
+            ...1 .... .... .... = Multifactor Authentication: Set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            1... .... .... .... = Unused: 0x1
+        Authentication Plugin Length: 21
+        Unused: 00000000000000000000
+        Salt: r!TKd<Wnn<\x12\x10
+        Authentication Plugin: caching_sha2_password
+
+Frame 91: 216 bytes on wire (1728 bits), 216 bytes captured (1728 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46582, Dst Port: 3306, Seq: 1, Ack: 79, Len: 150
+MySQL Protocol
+    Packet Length: 146
+    Packet Number: 1
+    Login Request
+        Client Capabilities: 0xa28d
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..0. = Found Rows: Not set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...0 .... = Don't Allow database.table.column: Not set
+            .... .... ..0. .... = Can use compression protocol: Not set
+            .... .... .0.. .... = ODBC Client: Not set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...0 .... .... = Ignore Spaces before '(': Not set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .0.. .... .... = Interactive Client: Not set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...0 .... .... .... = Ignore sigpipes: Not set
+            ..1. .... .... .... = Knows about transactions: Set
+            .0.. .... .... .... = Speaks 4.1 protocol (old flag): Not set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Extended Client Capabilities: 0x001b
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .0.. = PS Multiple results: Not set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..0. .... = Plugin Auth LENENC Client Data: Not set
+            .... .... .0.. .... = Client can handle expired passwords: Not set
+            .... .... 0... .... = Session variable tracking: Not set
+            .... ...0 .... .... = Deprecate EOF: Not set
+            .... ..0. .... .... = Client can handle optional resultset metadata: Not set
+            .... .0.. .... .... = ZSTD Compression Algorithm: Not set
+            .... 0... .... .... = Query Attributes: Not set
+            ...0 .... .... .... = Multifactor Authentication: Not set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            0... .... .... .... = Unused: 0x0
+        MAX Packet: 3221225472
+        Collation: utf8mb4 COLLATE utf8mb4_general_ci (45)
+        Unused: 0000000000000000000000000000000000000000000000
+        Username: webuser
+        Password: 81706a7c1204e197686c641bd88d222c3ed2020501d298381e973bc0af2ade56
+        Schema: webdb
+        Client Auth Plugin: caching_sha2_password
+        Connection Attributes
+            Connection Attributes length: 44
+            Connection Attribute - _client_name: mysqlnd
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _client_name
+                Connection Attribute Value Length: 7
+                Connection Attribute Value: mysqlnd
+            Connection Attribute - _server_host: 127.0.0.1
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _server_host
+                Connection Attribute Value Length: 9
+                Connection Attribute Value: 127.0.0.1
+
+Frame 93: 114 bytes on wire (912 bits), 114 bytes captured (912 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46582, Seq: 79, Ack: 151, Len: 48
+MySQL Protocol - authentication switch request
+    Packet Length: 44
+    Packet Number: 2
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Auth Method Name: mysql_native_password
+    Auth Method Data: 27155647233703237221544b643c576e6e3c121000
+
+Frame 94: 90 bytes on wire (720 bits), 90 bytes captured (720 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46582, Dst Port: 3306, Seq: 151, Ack: 127, Len: 24
+MySQL Protocol
+    Packet Length: 20
+    Packet Number: 3
+    Auth Method Data: 628855904e4429b0a69fbceb7ad49452a3322210
+
+Frame 95: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46582, Seq: 127, Ack: 175, Len: 11
+MySQL Protocol - response OK
+    Packet Length: 7
+    Packet Number: 4
+    Response Code: OK Packet (0x00)
+    Affected Rows: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+    Warnings: 0
+
+Frame 96: 190 bytes on wire (1520 bits), 190 bytes captured (1520 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46582, Dst Port: 3306, Seq: 175, Ack: 138, Len: 124
+MySQL Protocol
+    Packet Length: 120
+    Packet Number: 0
+    Request Command Query
+        Command: Query (3)
+        Statement: INSERT INTO students (full_name, group_name, email) VALUES ('Шевчук Максим', 'КН-21', 'maks@example.com')
+
+Frame 97: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46582, Seq: 138, Ack: 299, Len: 11
+MySQL Protocol - response OK
+    Packet Length: 7
+    Packet Number: 1
+    Response Code: OK Packet (0x00)
+    Affected Rows: 1
+    Last INSERT ID: 1
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+    Warnings: 0
+
+Frame 98: 71 bytes on wire (568 bits), 71 bytes captured (568 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46582, Dst Port: 3306, Seq: 299, Ack: 149, Len: 5
+MySQL Protocol
+    Packet Length: 1
+    Packet Number: 0
+    Request Command Quit
+        Command: Quit (1)
+
+Frame 135: 144 bytes on wire (1152 bits), 144 bytes captured (1152 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46598, Seq: 1, Ack: 1, Len: 78
+MySQL Protocol
+    Packet Length: 74
+    Packet Number: 0
+    Server Greeting
+        Protocol: 10
+        Version: 8.0.46
+        Thread ID: 14
+        Salt: GU\x06dm+}z
+        Server Capabilities: 0xf7ff
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..1. = Found Rows: Set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...1 .... = Don't Allow database.table.column: Set
+            .... .... ..1. .... = Can use compression protocol: Set
+            .... .... .1.. .... = ODBC Client: Set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...1 .... .... = Ignore Spaces before '(': Set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .1.. .... .... = Interactive Client: Set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...1 .... .... .... = Ignore sigpipes: Set
+            ..1. .... .... .... = Knows about transactions: Set
+            .1.. .... .... .... = Speaks 4.1 protocol (old flag): Set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Server Language: utf8mb4 COLLATE utf8mb4_0900_ai_ci (255)
+        Server Status: 0x0002
+            .... .... .... ...0 = In transaction: Not set
+            .... .... .... ..1. = AUTO_COMMIT: Set
+            .... .... .... .0.. = Multi query / Unused: Not set
+            .... .... .... 0... = More results: Not set
+            .... .... ...0 .... = Bad index used: Not set
+            .... .... ..0. .... = No index used: Not set
+            .... .... .0.. .... = Cursor exists: Not set
+            .... .... 0... .... = Last row sent: Not set
+            .... ...0 .... .... = Database dropped: Not set
+            .... ..0. .... .... = No backslash escapes: Not set
+            .... .0.. .... .... = Metadata changed: Not set
+            .... 0... .... .... = Query was slow: Not set
+            ...0 .... .... .... = PS Out Params: Not set
+            ..0. .... .... .... = In Trans Readonly: Not set
+            .0.. .... .... .... = Session state changed: Not set
+        Extended Server Capabilities: 0x9fff
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .1.. = PS Multiple results: Set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..1. .... = Plugin Auth LENENC Client Data: Set
+            .... .... .1.. .... = Client can handle expired passwords: Set
+            .... .... 1... .... = Session variable tracking: Set
+            .... ...1 .... .... = Deprecate EOF: Set
+            .... ..1. .... .... = Client can handle optional resultset metadata: Set
+            .... .1.. .... .... = ZSTD Compression Algorithm: Set
+            .... 1... .... .... = Query Attributes: Set
+            ...1 .... .... .... = Multifactor Authentication: Set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            1... .... .... .... = Unused: 0x1
+        Authentication Plugin Length: 21
+        Unused: 00000000000000000000
+        Salt: j`:UQ+RS=\t\x01=
+        Authentication Plugin: caching_sha2_password
+
+Frame 137: 216 bytes on wire (1728 bits), 216 bytes captured (1728 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46598, Dst Port: 3306, Seq: 1, Ack: 79, Len: 150
+MySQL Protocol
+    Packet Length: 146
+    Packet Number: 1
+    Login Request
+        Client Capabilities: 0xa28d
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..0. = Found Rows: Not set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...0 .... = Don't Allow database.table.column: Not set
+            .... .... ..0. .... = Can use compression protocol: Not set
+            .... .... .0.. .... = ODBC Client: Not set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...0 .... .... = Ignore Spaces before '(': Not set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .0.. .... .... = Interactive Client: Not set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...0 .... .... .... = Ignore sigpipes: Not set
+            ..1. .... .... .... = Knows about transactions: Set
+            .0.. .... .... .... = Speaks 4.1 protocol (old flag): Not set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Extended Client Capabilities: 0x001b
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .0.. = PS Multiple results: Not set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..0. .... = Plugin Auth LENENC Client Data: Not set
+            .... .... .0.. .... = Client can handle expired passwords: Not set
+            .... .... 0... .... = Session variable tracking: Not set
+            .... ...0 .... .... = Deprecate EOF: Not set
+            .... ..0. .... .... = Client can handle optional resultset metadata: Not set
+            .... .0.. .... .... = ZSTD Compression Algorithm: Not set
+            .... 0... .... .... = Query Attributes: Not set
+            ...0 .... .... .... = Multifactor Authentication: Not set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            0... .... .... .... = Unused: 0x0
+        MAX Packet: 3221225472
+        Collation: utf8mb4 COLLATE utf8mb4_general_ci (45)
+        Unused: 0000000000000000000000000000000000000000000000
+        Username: webuser
+        Password: 50787e6e1500a5fa4727fe333cd0bb86e707988a24a4d3b162e8c22e10e4b92c
+        Schema: webdb
+        Client Auth Plugin: caching_sha2_password
+        Connection Attributes
+            Connection Attributes length: 44
+            Connection Attribute - _client_name: mysqlnd
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _client_name
+                Connection Attribute Value Length: 7
+                Connection Attribute Value: mysqlnd
+            Connection Attribute - _server_host: 127.0.0.1
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _server_host
+                Connection Attribute Value Length: 9
+                Connection Attribute Value: 127.0.0.1
+
+Frame 139: 114 bytes on wire (912 bits), 114 bytes captured (912 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46598, Seq: 79, Ack: 151, Len: 48
+MySQL Protocol - authentication switch request
+    Packet Length: 44
+    Packet Number: 2
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Auth Method Name: mysql_native_password
+    Auth Method Data: 475506646d2b7d7a6a603a55512b52533d09013d00
+
+Frame 140: 90 bytes on wire (720 bits), 90 bytes captured (720 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46598, Dst Port: 3306, Seq: 151, Ack: 127, Len: 24
+MySQL Protocol
+    Packet Length: 20
+    Packet Number: 3
+    Auth Method Data: 9e43cfc5f99962179923c4b56a27a77dc2ab1fd8
+
+Frame 141: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46598, Seq: 127, Ack: 175, Len: 11
+MySQL Protocol - response OK
+    Packet Length: 7
+    Packet Number: 4
+    Response Code: OK Packet (0x00)
+    Affected Rows: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+    Warnings: 0
+
+Frame 142: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46598, Dst Port: 3306, Seq: 175, Ack: 138, Len: 82
+MySQL Protocol
+    Packet Length: 78
+    Packet Number: 0
+    Request Command Query
+        Command: Query (3)
+        Statement: SELECT id, full_name, group_name, email, created_at FROM students ORDER BY id
+
+Frame 143: 473 bytes on wire (3784 bits), 473 bytes captured (3784 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46598, Seq: 138, Ack: 257, Len: 407
+MySQL Protocol - column count
+    Packet Length: 1
+    Packet Number: 1
+    Number of fields: 5
+MySQL Protocol - field packet
+    Packet Length: 47
+    Packet Number: 2
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: id
+    Original name
+        Original name: id
+    Charset number: binary COLLATE binary (63)
+    Length: 10
+    Type: FIELD_TYPE_LONG (3)
+    Flags: 0x4223
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..1. = Primary key: Set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..1. .... = Unsigned: Set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..1. .... .... = Auto increment: Set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 61
+    Packet Number: 3
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: full_name
+    Original name
+        Original name: full_name
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 400
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x1001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 63
+    Packet Number: 4
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: group_name
+    Original name
+        Original name: group_name
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 80
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x1001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 53
+    Packet Number: 5
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: email
+    Original name
+        Original name: email
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 400
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x1001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 63
+    Packet Number: 6
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: created_at
+    Original name
+        Original name: created_at
+    Charset number: binary COLLATE binary (63)
+    Length: 19
+    Type: FIELD_TYPE_TIMESTAMP (7)
+    Flags: 0x0481
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .1.. .... .... = Timestamp: Set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - intermediate EOF
+    Packet Length: 5
+    Packet Number: 7
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Warnings: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+MySQL Protocol - row packet
+    Packet Length: 73
+    Packet Number: 8
+    text
+        text: 1
+    text
+        text: Шевчук Максим
+    text
+        text: КН-21
+    text
+        text: maks@example.com
+    text
+        text: 2026-11-24 14:46:02
+MySQL Protocol - response EOF
+    Packet Length: 5
+    Packet Number: 9
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Warnings: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+
+Frame 177: 71 bytes on wire (568 bits), 71 bytes captured (568 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46598, Dst Port: 3306, Seq: 257, Ack: 545, Len: 5
+MySQL Protocol
+    Packet Length: 1
+    Packet Number: 0
+    Request Command Quit
+        Command: Quit (1)
+
+Frame 193: 144 bytes on wire (1152 bits), 144 bytes captured (1152 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46604, Seq: 1, Ack: 1, Len: 78
+MySQL Protocol
+    Packet Length: 74
+    Packet Number: 0
+    Server Greeting
+        Protocol: 10
+        Version: 8.0.46
+        Thread ID: 15
+        Salt: Tg_@@|\x1B\b
+        Server Capabilities: 0xf7ff
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..1. = Found Rows: Set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...1 .... = Don't Allow database.table.column: Set
+            .... .... ..1. .... = Can use compression protocol: Set
+            .... .... .1.. .... = ODBC Client: Set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...1 .... .... = Ignore Spaces before '(': Set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .1.. .... .... = Interactive Client: Set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...1 .... .... .... = Ignore sigpipes: Set
+            ..1. .... .... .... = Knows about transactions: Set
+            .1.. .... .... .... = Speaks 4.1 protocol (old flag): Set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Server Language: utf8mb4 COLLATE utf8mb4_0900_ai_ci (255)
+        Server Status: 0x0002
+            .... .... .... ...0 = In transaction: Not set
+            .... .... .... ..1. = AUTO_COMMIT: Set
+            .... .... .... .0.. = Multi query / Unused: Not set
+            .... .... .... 0... = More results: Not set
+            .... .... ...0 .... = Bad index used: Not set
+            .... .... ..0. .... = No index used: Not set
+            .... .... .0.. .... = Cursor exists: Not set
+            .... .... 0... .... = Last row sent: Not set
+            .... ...0 .... .... = Database dropped: Not set
+            .... ..0. .... .... = No backslash escapes: Not set
+            .... .0.. .... .... = Metadata changed: Not set
+            .... 0... .... .... = Query was slow: Not set
+            ...0 .... .... .... = PS Out Params: Not set
+            ..0. .... .... .... = In Trans Readonly: Not set
+            .0.. .... .... .... = Session state changed: Not set
+        Extended Server Capabilities: 0x9fff
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .1.. = PS Multiple results: Set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..1. .... = Plugin Auth LENENC Client Data: Set
+            .... .... .1.. .... = Client can handle expired passwords: Set
+            .... .... 1... .... = Session variable tracking: Set
+            .... ...1 .... .... = Deprecate EOF: Set
+            .... ..1. .... .... = Client can handle optional resultset metadata: Set
+            .... .1.. .... .... = ZSTD Compression Algorithm: Set
+            .... 1... .... .... = Query Attributes: Set
+            ...1 .... .... .... = Multifactor Authentication: Set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            1... .... .... .... = Unused: 0x1
+        Authentication Plugin Length: 21
+        Unused: 00000000000000000000
+        Salt: \fDJN\x17Fq'0,\x12u
+        Authentication Plugin: caching_sha2_password
+
+Frame 195: 216 bytes on wire (1728 bits), 216 bytes captured (1728 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46604, Dst Port: 3306, Seq: 1, Ack: 79, Len: 150
+MySQL Protocol
+    Packet Length: 146
+    Packet Number: 1
+    Login Request
+        Client Capabilities: 0xa28d
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..0. = Found Rows: Not set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...0 .... = Don't Allow database.table.column: Not set
+            .... .... ..0. .... = Can use compression protocol: Not set
+            .... .... .0.. .... = ODBC Client: Not set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...0 .... .... = Ignore Spaces before '(': Not set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .0.. .... .... = Interactive Client: Not set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...0 .... .... .... = Ignore sigpipes: Not set
+            ..1. .... .... .... = Knows about transactions: Set
+            .0.. .... .... .... = Speaks 4.1 protocol (old flag): Not set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Extended Client Capabilities: 0x001b
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .0.. = PS Multiple results: Not set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..0. .... = Plugin Auth LENENC Client Data: Not set
+            .... .... .0.. .... = Client can handle expired passwords: Not set
+            .... .... 0... .... = Session variable tracking: Not set
+            .... ...0 .... .... = Deprecate EOF: Not set
+            .... ..0. .... .... = Client can handle optional resultset metadata: Not set
+            .... .0.. .... .... = ZSTD Compression Algorithm: Not set
+            .... 0... .... .... = Query Attributes: Not set
+            ...0 .... .... .... = Multifactor Authentication: Not set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            0... .... .... .... = Unused: 0x0
+        MAX Packet: 3221225472
+        Collation: utf8mb4 COLLATE utf8mb4_general_ci (45)
+        Unused: 0000000000000000000000000000000000000000000000
+        Username: webuser
+        Password: 3ab33c852c008c78b57e44e9b7900340a27c5c3324a9ff9ee3275076a8027399
+        Schema: webdb
+        Client Auth Plugin: caching_sha2_password
+        Connection Attributes
+            Connection Attributes length: 44
+            Connection Attribute - _client_name: mysqlnd
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _client_name
+                Connection Attribute Value Length: 7
+                Connection Attribute Value: mysqlnd
+            Connection Attribute - _server_host: 127.0.0.1
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _server_host
+                Connection Attribute Value Length: 9
+                Connection Attribute Value: 127.0.0.1
+
+Frame 197: 114 bytes on wire (912 bits), 114 bytes captured (912 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46604, Seq: 79, Ack: 151, Len: 48
+MySQL Protocol - authentication switch request
+    Packet Length: 44
+    Packet Number: 2
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Auth Method Name: mysql_native_password
+    Auth Method Data: 54675f40407c1b080c444a4e17467127302c127500
+
+Frame 198: 90 bytes on wire (720 bits), 90 bytes captured (720 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46604, Dst Port: 3306, Seq: 151, Ack: 127, Len: 24
+MySQL Protocol
+    Packet Length: 20
+    Packet Number: 3
+    Auth Method Data: ad74041f1029c74dd19885b373d3610d9247ecd5
+
+Frame 199: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46604, Seq: 127, Ack: 175, Len: 11
+MySQL Protocol - response OK
+    Packet Length: 7
+    Packet Number: 4
+    Response Code: OK Packet (0x00)
+    Affected Rows: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+    Warnings: 0
+
+Frame 200: 182 bytes on wire (1456 bits), 182 bytes captured (1456 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46604, Dst Port: 3306, Seq: 175, Ack: 138, Len: 116
+MySQL Protocol
+    Packet Length: 112
+    Packet Number: 0
+    Request Command Query
+        Command: Query (3)
+        Statement: INSERT INTO students (full_name, group_name, email) VALUES ('O\'Brien Анна', 'КН-22', 'anna@example.com')
+
+Frame 201: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46604, Seq: 138, Ack: 291, Len: 11
+MySQL Protocol - response OK
+    Packet Length: 7
+    Packet Number: 1
+    Response Code: OK Packet (0x00)
+    Affected Rows: 1
+    Last INSERT ID: 2
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+    Warnings: 0
+
+Frame 202: 71 bytes on wire (568 bits), 71 bytes captured (568 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46604, Dst Port: 3306, Seq: 291, Ack: 149, Len: 5
+MySQL Protocol
+    Packet Length: 1
+    Packet Number: 0
+    Request Command Quit
+        Command: Quit (1)
+
+Frame 219: 144 bytes on wire (1152 bits), 144 bytes captured (1152 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46610, Seq: 1, Ack: 1, Len: 78
+MySQL Protocol
+    Packet Length: 74
+    Packet Number: 0
+    Server Greeting
+        Protocol: 10
+        Version: 8.0.46
+        Thread ID: 16
+        Salt: x!>0cnj\a
+        Server Capabilities: 0xf7ff
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..1. = Found Rows: Set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...1 .... = Don't Allow database.table.column: Set
+            .... .... ..1. .... = Can use compression protocol: Set
+            .... .... .1.. .... = ODBC Client: Set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...1 .... .... = Ignore Spaces before '(': Set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .1.. .... .... = Interactive Client: Set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...1 .... .... .... = Ignore sigpipes: Set
+            ..1. .... .... .... = Knows about transactions: Set
+            .1.. .... .... .... = Speaks 4.1 protocol (old flag): Set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Server Language: utf8mb4 COLLATE utf8mb4_0900_ai_ci (255)
+        Server Status: 0x0002
+            .... .... .... ...0 = In transaction: Not set
+            .... .... .... ..1. = AUTO_COMMIT: Set
+            .... .... .... .0.. = Multi query / Unused: Not set
+            .... .... .... 0... = More results: Not set
+            .... .... ...0 .... = Bad index used: Not set
+            .... .... ..0. .... = No index used: Not set
+            .... .... .0.. .... = Cursor exists: Not set
+            .... .... 0... .... = Last row sent: Not set
+            .... ...0 .... .... = Database dropped: Not set
+            .... ..0. .... .... = No backslash escapes: Not set
+            .... .0.. .... .... = Metadata changed: Not set
+            .... 0... .... .... = Query was slow: Not set
+            ...0 .... .... .... = PS Out Params: Not set
+            ..0. .... .... .... = In Trans Readonly: Not set
+            .0.. .... .... .... = Session state changed: Not set
+        Extended Server Capabilities: 0x9fff
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .1.. = PS Multiple results: Set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..1. .... = Plugin Auth LENENC Client Data: Set
+            .... .... .1.. .... = Client can handle expired passwords: Set
+            .... .... 1... .... = Session variable tracking: Set
+            .... ...1 .... .... = Deprecate EOF: Set
+            .... ..1. .... .... = Client can handle optional resultset metadata: Set
+            .... .1.. .... .... = ZSTD Compression Algorithm: Set
+            .... 1... .... .... = Query Attributes: Set
+            ...1 .... .... .... = Multifactor Authentication: Set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            1... .... .... .... = Unused: 0x1
+        Authentication Plugin Length: 21
+        Unused: 00000000000000000000
+        Salt: leMcJ2T8\x0ErTU
+        Authentication Plugin: caching_sha2_password
+
+Frame 221: 216 bytes on wire (1728 bits), 216 bytes captured (1728 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46610, Dst Port: 3306, Seq: 1, Ack: 79, Len: 150
+MySQL Protocol
+    Packet Length: 146
+    Packet Number: 1
+    Login Request
+        Client Capabilities: 0xa28d
+            .... .... .... ...1 = Long Password: Set
+            .... .... .... ..0. = Found Rows: Not set
+            .... .... .... .1.. = Long Column Flags: Set
+            .... .... .... 1... = Connect With Database: Set
+            .... .... ...0 .... = Don't Allow database.table.column: Not set
+            .... .... ..0. .... = Can use compression protocol: Not set
+            .... .... .0.. .... = ODBC Client: Not set
+            .... .... 1... .... = Can Use LOAD DATA LOCAL: Set
+            .... ...0 .... .... = Ignore Spaces before '(': Not set
+            .... ..1. .... .... = Speaks 4.1 protocol (new flag): Set
+            .... .0.. .... .... = Interactive Client: Not set
+            .... 0... .... .... = Switch to SSL after handshake: Not set
+            ...0 .... .... .... = Ignore sigpipes: Not set
+            ..1. .... .... .... = Knows about transactions: Set
+            .0.. .... .... .... = Speaks 4.1 protocol (old flag): Not set
+            1... .... .... .... = Can do 4.1 authentication: Set
+        Extended Client Capabilities: 0x001b
+            .... .... .... ...1 = Multiple statements: Set
+            .... .... .... ..1. = Multiple results: Set
+            .... .... .... .0.. = PS Multiple results: Not set
+            .... .... .... 1... = Plugin Auth: Set
+            .... .... ...1 .... = Connect attrs: Set
+            .... .... ..0. .... = Plugin Auth LENENC Client Data: Not set
+            .... .... .0.. .... = Client can handle expired passwords: Not set
+            .... .... 0... .... = Session variable tracking: Not set
+            .... ...0 .... .... = Deprecate EOF: Not set
+            .... ..0. .... .... = Client can handle optional resultset metadata: Not set
+            .... .0.. .... .... = ZSTD Compression Algorithm: Not set
+            .... 0... .... .... = Query Attributes: Not set
+            ...0 .... .... .... = Multifactor Authentication: Not set
+            ..0. .... .... .... = Capability Extension: Not set
+            .0.. .... .... .... = Client verifies server's TLS/SSL certificate: Not set
+            0... .... .... .... = Unused: 0x0
+        MAX Packet: 3221225472
+        Collation: utf8mb4 COLLATE utf8mb4_general_ci (45)
+        Unused: 0000000000000000000000000000000000000000000000
+        Username: webuser
+        Password: 15fd3f738825accc3940ba5c1c2d1e382b2c78a1f6d2cd3c9925d170a4d28b4d
+        Schema: webdb
+        Client Auth Plugin: caching_sha2_password
+        Connection Attributes
+            Connection Attributes length: 44
+            Connection Attribute - _client_name: mysqlnd
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _client_name
+                Connection Attribute Value Length: 7
+                Connection Attribute Value: mysqlnd
+            Connection Attribute - _server_host: 127.0.0.1
+                Connection Attribute Name Length: 12
+                Connection Attribute Name: _server_host
+                Connection Attribute Value Length: 9
+                Connection Attribute Value: 127.0.0.1
+
+Frame 223: 114 bytes on wire (912 bits), 114 bytes captured (912 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46610, Seq: 79, Ack: 151, Len: 48
+MySQL Protocol - authentication switch request
+    Packet Length: 44
+    Packet Number: 2
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Auth Method Name: mysql_native_password
+    Auth Method Data: 78213e30636e6a076c654d634a3254380e72545500
+
+Frame 224: 90 bytes on wire (720 bits), 90 bytes captured (720 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46610, Dst Port: 3306, Seq: 151, Ack: 127, Len: 24
+MySQL Protocol
+    Packet Length: 20
+    Packet Number: 3
+    Auth Method Data: 72832d317901ba5b2e351a80f54a501269eb9305
+
+Frame 225: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46610, Seq: 127, Ack: 175, Len: 11
+MySQL Protocol - response OK
+    Packet Length: 7
+    Packet Number: 4
+    Response Code: OK Packet (0x00)
+    Affected Rows: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+    Warnings: 0
+
+Frame 226: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46610, Dst Port: 3306, Seq: 175, Ack: 138, Len: 82
+MySQL Protocol
+    Packet Length: 78
+    Packet Number: 0
+    Request Command Query
+        Command: Query (3)
+        Statement: SELECT id, full_name, group_name, email, created_at FROM students ORDER BY id
+
+Frame 227: 541 bytes on wire (4328 bits), 541 bytes captured (4328 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3306, Dst Port: 46610, Seq: 138, Ack: 257, Len: 475
+MySQL Protocol - column count
+    Packet Length: 1
+    Packet Number: 1
+    Number of fields: 5
+MySQL Protocol - field packet
+    Packet Length: 47
+    Packet Number: 2
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: id
+    Original name
+        Original name: id
+    Charset number: binary COLLATE binary (63)
+    Length: 10
+    Type: FIELD_TYPE_LONG (3)
+    Flags: 0x4223
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..1. = Primary key: Set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..1. .... = Unsigned: Set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..1. .... .... = Auto increment: Set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 61
+    Packet Number: 3
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: full_name
+    Original name
+        Original name: full_name
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 400
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x1001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 63
+    Packet Number: 4
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: group_name
+    Original name
+        Original name: group_name
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 80
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x1001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 53
+    Packet Number: 5
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: email
+    Original name
+        Original name: email
+    Charset number: utf8mb4 COLLATE utf8mb4_general_ci (45)
+    Length: 400
+    Type: FIELD_TYPE_VAR_STRING (253)
+    Flags: 0x1001
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .0.. .... .... = Timestamp: Not set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - field packet
+    Packet Length: 63
+    Packet Number: 6
+    Catalog
+        Catalog: def
+    Database
+        Database: webdb
+    Table
+        Table: students
+    Original table
+        Original table: students
+    Name
+        Name: created_at
+    Original name
+        Original name: created_at
+    Charset number: binary COLLATE binary (63)
+    Length: 19
+    Type: FIELD_TYPE_TIMESTAMP (7)
+    Flags: 0x0481
+        .... .... .... ...1 = Not null: Set
+        .... .... .... ..0. = Primary key: Not set
+        .... .... .... .0.. = Unique key: Not set
+        .... .... .... 0... = Multiple key: Not set
+        .... .... ...0 .... = Blob: Not set
+        .... .... ..0. .... = Unsigned: Not set
+        .... .... .0.. .... = Zero fill: Not set
+        .... ...0 .... .... = Enum: Not set
+        .... ..0. .... .... = Auto increment: Not set
+        .... .1.. .... .... = Timestamp: Set
+        .... 0... .... .... = Set: Not set
+    Decimals: 0
+MySQL Protocol - intermediate EOF
+    Packet Length: 5
+    Packet Number: 7
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Warnings: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+MySQL Protocol - row packet
+    Packet Length: 73
+    Packet Number: 8
+    text
+        text: 1
+    text
+        text: Шевчук Максим
+    text
+        text: КН-21
+    text
+        text: maks@example.com
+    text
+        text: 2026-11-24 14:46:02
+MySQL Protocol - row packet
+    Packet Length: 64
+    Packet Number: 9
+    text
+        text: 2
+    text
+        text: O'Brien Анна
+    text
+        text: КН-22
+    text
+        text: anna@example.com
+    text
+        text: 2026-11-24 14:46:05
+MySQL Protocol - response EOF
+    Packet Length: 5
+    Packet Number: 10
+    Response Code: EOF Packet (0xfe)
+    EOF marker: 254
+    Warnings: 0
+    Server Status: 0x0002
+        .... .... .... ...0 = In transaction: Not set
+        .... .... .... ..1. = AUTO_COMMIT: Set
+        .... .... .... .0.. = Multi query / Unused: Not set
+        .... .... .... 0... = More results: Not set
+        .... .... ...0 .... = Bad index used: Not set
+        .... .... ..0. .... = No index used: Not set
+        .... .... .0.. .... = Cursor exists: Not set
+        .... .... 0... .... = Last row sent: Not set
+        .... ...0 .... .... = Database dropped: Not set
+        .... ..0. .... .... = No backslash escapes: Not set
+        .... .0.. .... .... = Metadata changed: Not set
+        .... 0... .... .... = Query was slow: Not set
+        ...0 .... .... .... = PS Out Params: Not set
+        ..0. .... .... .... = In Trans Readonly: Not set
+        .0.. .... .... .... = Session state changed: Not set
+
+Frame 261: 71 bytes on wire (568 bits), 71 bytes captured (568 bits)
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 46610, Dst Port: 3306, Seq: 257, Ack: 613, Len: 5
+MySQL Protocol
+    Packet Length: 1
+    Packet Number: 0
+    Request Command Quit
+        Command: Quit (1)
+
