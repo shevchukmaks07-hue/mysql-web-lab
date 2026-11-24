@@ -1,0 +1,32 @@
+# Два контейнери: db (справжній MySQL, порт 3306) і app (PHP + tcpdump/tshark).
+# app живе в мережі db (network_mode: service:db), тому застосунок ходить
+# на 127.0.0.1:3306, а tcpdump бачить цей трафік на інтерфейсі lo.
+services:
+  db:
+    image: mysql:8.0
+    command: --skip-ssl          # лише для лабораторної: SQL видно у Wireshark відкритим текстом
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+    volumes:
+      - ../sql/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+      - mysql-data:/var/lib/mysql
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
+    network_mode: service:db
+    cap_add: [NET_ADMIN, NET_RAW]   # потрібно для tcpdump
+    environment:
+      DB_HOST: 127.0.0.1
+      DB_PORT: "3306"
+      DB_NAME: webdb
+      DB_USER: webuser
+      DB_PASS: webpass
+    volumes:
+      - ../..:/workspaces:cached
+
+volumes:
+  mysql-data:
